@@ -1,0 +1,87 @@
+//CSS by Manolo RAJAONAH
+.LoginPage,.RegisterPage {
+    height: 100vh;
+    background: rgb(233, 233, 255);
+    padding-top: 20vh;
+
+    .log_cnt {
+        box-shadow: 2px 10px 40px rgb(206, 206, 206);
+        width: 50vw;
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        .left_cnt {
+            background-image: linear-gradient(#4c70ff, #4c70ff);
+            border: none;
+            border-radius: 5px 0 0 5px;
+            padding: 10%;
+            padding-top: 50%;
+            box-shadow: 3px 0 10px rgb(197, 197, 197);
+            color: white;
+
+            .title_cnt {
+                font-weight: bold;
+                padding: 20px;
+            }
+
+            .author_cnt {
+                margin-top: 20px;
+                font-weight: light;
+            }
+        }
+
+        .right_cnt {
+            background-color: rgb(255, 255, 255);
+            padding: 10%;
+            padding-top: 35%;
+            border-radius: 0 5px 5px 0;
+
+            .title_cnt {
+                font-size: 20px;
+            }
+
+            .form_cnt {
+                input {
+                    width: 80%;
+                    padding: 10px;
+                    margin-top: 20px;
+                    border: 1px solid rgb(188, 188, 188);
+                    box-shadow: 0 5px 20px rgb(224, 224, 224);
+                    border-radius: 5px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.25s;
+                }
+                input:active, input:focus{
+                    transform: scale(1.05);
+                }
+
+                button {
+                    padding: 10px;
+                    // padding-top: 15px;
+                    // padding-bottom: 15px;
+                    margin-top: 20px;
+                    border: 2px solid #4c70ff;
+                    box-shadow: 0 5px 20px rgb(224, 224, 224);
+                    border-radius: 5px;
+                    outline: none;
+                    width: calc(85% + 5px);
+                    background-color: #4c70ff;
+                    color: white;
+                    transition: 0.25s;
+                    cursor: pointer;
+                }
+
+                button:hover{
+                    border: 2px solid #4c70ff;
+                    background-color: white;
+                    color: #4c70ff ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+//CSS by Manolo RAJAONAH
+.HomePage {
+    height: 100vh;
+    background: rgb(233, 233, 255);
+    padding-top: 10vh;
+
+    .profile_cnt {
+        box-shadow: 2px 20px 40px rgb(206, 206, 206);
+        border-radius: 5px;
+        margin: auto;
+        width: 40vw;
+        height: 65vh;
+        background-color: white;
+
+        .top_banner_cnt {
+            height: 40vh;
+
+            .profile_bnr {
+                height: 150px;
+                background-color: rgb(238, 238, 238);
+                border-radius: 5px 5px 0 0;
+                border-top: 10px solid #4c70ff;
+            }
+
+            .profile_pct {
+                border-radius: 100%;
+                margin: auto;
+                height: 200px;
+                width: 200px;
+                background-color: rgb(241, 241, 241);
+                transform: translateY(-50%);
+                box-shadow: 0 10px 20px rgb(203, 203, 203);
+            }
+        }
+
+        .detail_cnt {
+            .name_title_cnt {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .desc_cnt {
+                font-weight: lighter;
+                color: rgb(171, 171, 171);
+                padding: 10px;
+            }
+        }
+
+        .logout {
+            button {
+                padding: 10px;
+                // padding-top: 15px;
+                // padding-bottom: 15px;
+                margin-top: 20px;
+                border: 2px solid #4c70ff;
+                box-shadow: 0 5px 20px rgb(224, 224, 224);
+                border-radius: 5px;
+                outline: none;
+                width: 50%;
+                background-color: #4c70ff;
+                color: white;
+                transition: 0.25s;
+                cursor: pointer;
+            }
+
+            button:hover {
+                border: 2px solid #4c70ff;
+                background-color: white;
+                color: #4c70ff;
+            }
+        }
+    }
+}
