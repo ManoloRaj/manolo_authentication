@@ -50,26 +50,35 @@ export function RegisterPage() {
             register.age !== "" &&
             register.password !== ""
         ) {
-            AuthenticationService
-                .register(register)
-                .then((result) => {
-                    console.log(result.isRegistered)
-                    if (result.isRegistered) {
+            if (emailRegex.test(register.email)) {
+                AuthenticationService
+                    .register(register)
+                    .then((result) => {
+                        console.log(result.isRegistered)
+                        if (result.isRegistered) {
 
-                        AuthenticationService.saveToken(result.access_token)
-                        navigate("/login")
-                    } else {
-                        setFlashMessage({
-                            open: true,
-                            message: "Cet identifiant est déja utilisé",
-                            severity: "error"
-                        })
-                    }
+                            AuthenticationService.saveToken(result.access_token)
+                            navigate("/login")
+                        } else {
+                            setFlashMessage({
+                                open: true,
+                                message: "Cet identifiant est déja utilisé",
+                                severity: "error"
+                            })
+                        }
+                    })
+            } else {
+                setFlashMessage({
+                    open: true,
+                    message: "Email invalide !!",
+                    severity: "error"
                 })
-        }else{
+            }
+
+        } else {
             setFlashMessage({
                 open: true,
-                message: "Veuillez remplir tout les champs",
+                message: "Veuillez remplir tous les champs",
                 severity: "error"
             })
         }

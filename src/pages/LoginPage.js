@@ -35,24 +35,36 @@ export function LoginPage() {
     function handleClickLogin(e) {
         e.preventDefault()
 
-        AuthenticationService
-            .login(login)
-            .then((result) => {
-                console.log(result.isLogged)
-                if (result.isLogged) {
+        if (
+            login.username !== "" &&
+            login.password !== ""
+        ) {
+            AuthenticationService
+                .login(login)
+                .then((result) => {
+                    console.log(result.isLogged)
+                    if (result.isLogged) {
 
-                    AuthenticationService.saveToken(result.access_token)
-                    AuthenticationService.saveUserName(login.username)
+                        AuthenticationService.saveToken(result.access_token)
+                        AuthenticationService.saveUserName(login.username)
 
-                    navigate("/homepage")
-                } else {
-                    setFlashMessage({
-                        open: true,
-                        message: "Verifiez vos identifiants",
-                        severity: "error"
-                    })
-                }
+                        navigate("/homepage")
+                    } else {
+                        setFlashMessage({
+                            open: true,
+                            message: "Verifiez vos identifiants",
+                            severity: "error"
+                        })
+                    }
+                })
+        } else {
+            setFlashMessage({
+                open: true,
+                message: "Veuillez remplir tous les champs",
+                severity: "error"
             })
+        }
+
 
 
     }
