@@ -22,8 +22,9 @@ export function HomePage() {
         UserService
             .getUserInformations(localStorage.getItem("username"))
             .then((result) => {
-                console.log(result)
-                setUser(result.data)
+                if (result.status) {
+                    setUser(result.data)
+                }
             })
 
 
