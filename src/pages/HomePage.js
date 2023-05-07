@@ -39,13 +39,13 @@ export function HomePage() {
                     </div>
                     <div className="detail_cnt">
                         <div className="name_title_cnt">
-                            {user.username}
+                            {user.username !== undefined ? user.username : ""}
                         </div>
                         <div className="desc_cnt">
                             Le détail des profils apparaissent ici
                         </div>
                         <div className="text_cnt">
-                            {user.email} - {user.age} ans
+                            {user.email !== undefined ? user.email : ""} - {user.age !== undefined ? user.age : ""} ans
                         </div>
                     </div>
                     <div className="logout">
