@@ -24,3 +24,19 @@ Application Reactjs d'authentification développer par Manolo RAJAONAH. Cette ap
     </li>
   </ul>
 </p>
+
+<h3>Les ressources consultés</h3>
+<p>
+
+  <ul>
+    <li>
+      Stackoverflow
+    </li>
+    <li>
+      Documentation officiel React sur https://react.dev
+    </li>
+    <li>
+      W3School
+    </li>
+  </ul>
+</p>
