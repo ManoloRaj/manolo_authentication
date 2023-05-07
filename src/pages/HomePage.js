@@ -6,7 +6,11 @@ import { useNavigate } from "react-router-dom";
 
 export function HomePage() {
     let navigate = useNavigate();
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState({
+        username: "",
+        email: "",
+        age: ""
+    })
 
     function handleClickLogout(e) {
         e.preventDefault()
