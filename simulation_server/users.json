@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "id_user": 1,
+            "username": "ManoloRajaonah",
+            "email": "manolo.rajaonah@gmail.com",
+            "password": "123456",
+            "age": 25
+        },
+        {
+            "id_user": 2,
+            "username": "Rabezandriana",
+            "email": "rabe@gmail.com",
+            "password": "azerty",
+            "age": 40
+        },
+        {
+            "id_user": 3,
+            "username": "Rakoto",
+            "email": "rakoto@gmail.com",
+            "password": "azerty",
+            "age": 40
+        },
+        {
+            "id_user": 4,
+            "username": "",
+            "email": "",
+            "password": "",
+            "age": ""
+        },
+        {
+            "id_user": 5,
+            "username": "Andrianampoina",
+            "email": "a@gmail.com",
+            "password": "123",
+            "age": "36"
+        }
+    ]
+}
