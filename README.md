@@ -1,5 +1,5 @@
 <h2>Authentication project</h2>
-Application Reactjs d'authentification développer par Manolo RAJAONAH. Cette application implémente : la connexion, l'inscription, une page "homepage" qui affiche le détail du profil, ont . En front End, on utilise Reactjs et pour simuler un serveur, on a utilisé un JSON Serveur et un fichier JSON pour stocker des données pour le test.
+Application Reactjs d'authentification développé par Manolo RAJAONAH. Cette application implémente : la connexion, l'inscription, une page "homepage" qui affiche le détail du profil, ont . En front End, on utilise Reactjs et pour simuler un serveur, on a utilisé un JSON Serveur et un fichier JSON pour stocker des données pour le test.
 
 
 <h3>Installer les modules</h3>
